@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PinInput from 'react-pin-input';
 interface PinInputProps {
   onSubmit?: (pin: string) => void;
@@ -9,8 +9,6 @@ interface PinInputProps {
 const OtpPinInput=  ({ onSubmit }:PinInputProps) => {
   const [pinValue, setPinValue] = useState<string>('');
 
-
-
   const handleSubmit = () => {
     if (pinValue.length === 4) {
       onSubmit!(pinValue);
@@ -18,8 +16,6 @@ const OtpPinInput=  ({ onSubmit }:PinInputProps) => {
       console.log('Submit button clicked');
     }
   };
-  
-   
   return (
   <div className='flex flex-col items-center justify-center h-screen bg-green-200'>
      <PinInput 
