@@ -105,7 +105,7 @@ const Signup: React.FC =()=> {
        
       
           
-          <div className='flex-col mx-auto  items-center w-3/5 px-5 py-7 md:px-12 md:py-14 font-Inter lg:px-20 lg:py-1'>
+          <div className='flex-col mx-auto  items-center w-full md:w-4/5 px-5 py-7 md:px-12 md:py-14 font-Inter lg:px-20 lg:py-1'>
             
             <div className="text-center">
               <h1 className="text-blue-950 text-4xl font-bold capitalize dark:text-green-600">sign up </h1>
