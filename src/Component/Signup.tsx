@@ -22,10 +22,7 @@ const Signup: React.FC =()=> {
     }));
   };
 
-  const validateForm = (): boolean => {
-    const { firstName, lastName, email, phoneNumber, password, confirmPassword } = formData;
-    return (!!firstName && !!lastName && !!email && !!phoneNumber && !!password && password === confirmPassword) as boolean;
-  };
+
     
   const [isDarkMode, setIsDarkMode] = useState(false);
   useEffect(() => {
@@ -179,7 +176,7 @@ const Signup: React.FC =()=> {
               <div className="flex flex-col justify-center py-2 md:py-4">
                   <div className="text-center dark:text-white  pt-2">
               <a href="">Already have an account? </a>
-              <a href="" className='font-semibold text-blue-600 underline '>Sign in</a>
+              <a href="/" className='font-semibold text-blue-600 underline '>Sign in</a>
             </div>
                   
                   <h1 className="text-center text-gray-500 pt-5 text-sm">

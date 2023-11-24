@@ -9,16 +9,7 @@ interface PinInputProps {
 const OtpPinInput=  ({ onSubmit }:PinInputProps) => {
   const [pinValue, setPinValue] = useState<string>('');
 
-  const generateOTP = (): string => {
-    return Math.floor(1000 + Math.random() * 9000).toString();
-  };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    if (/^\d*$/.test(value) && value.length <= 4) {
-      setPinValue(value);
-    }
-  };
 
   const handleSubmit = () => {
     if (pinValue.length === 4) {
