@@ -21,6 +21,7 @@ const OtpPinInput=  ({ onSubmit }:PinInputProps) => {
      <PinInput 
      length={4}
      inputMode='number'
+     onChange={setPinValue}
      />
      <button onClick={handleSubmit} className="mt-4 text-lg bg-green-500 text-white font-semibold capitalize rounded-md focus:outline-none focus:ring focus:border-blue-300 py-2 px-4">
       submit

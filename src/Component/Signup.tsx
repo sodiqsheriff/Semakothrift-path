@@ -74,6 +74,7 @@ const Signup: React.FC =()=> {
   const handleSignUpClick = () => {
     // Check if passwords match when sign-up button is clicked
     setPasswordsMatch(password === confirmPassword);
+    console.log('FormData:', formData);
   };
   
     return(
