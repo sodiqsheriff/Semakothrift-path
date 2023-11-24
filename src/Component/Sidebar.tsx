@@ -4,7 +4,7 @@ import jet from '../assets/send-plane-line.png'
 
 import {FaHeadphones} from 'react-icons/fa'
 import out from '../assets/rightarrow.png'
-import { useRoutes } from "react-router-dom";
+import { useRoutes, RouterProvider } from "react-router-dom";
 import Overview from './Overview'
 import Scheme from './Scheme'
 import Signup from './Signup'
@@ -31,7 +31,6 @@ const Sidebar = () => {
 <div className="hidden md:hidden lg:flex flex-col border border-y-0 border-l-0">
     <div className="flex items-center px-10 py-2 h-16 border border-x-0 border-t-0 w-full "><img src={logo} alt="logo" className='w-1/2'/> <h1 className="text-2xl text-blue-950 font-bold">Semanko</h1></div>
     <div className="p-5 space-y-8 pt-10 text-gray-400 capitalize font-semibold md:text-sm lg:text-md" >
-        {subpageRoutes}
         <div className="flex gap-3">
             <img src={bank} alt="bank" />
             <a href='/Overview' className=""
